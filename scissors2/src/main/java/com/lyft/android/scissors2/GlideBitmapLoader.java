@@ -49,7 +49,7 @@ public class GlideBitmapLoader implements BitmapLoader {
                 .apply(RequestOptions.skipMemoryCacheOf(true)
                         .diskCacheStrategy(DiskCacheStrategy.DATA)
                         .transform(transformation))
-                .transition(DrawableTransitionOptions.withCrossFade())
+                .transition(BitmapTransitionOptions.withCrossFade())
                 .into(imageView);
     }
 
