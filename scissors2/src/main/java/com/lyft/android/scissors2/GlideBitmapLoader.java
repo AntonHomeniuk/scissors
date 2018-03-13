@@ -23,7 +23,6 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
-import com.bumptech.glide.load.resource.bitmap.BitmapTransitionOptions;
 import com.bumptech.glide.request.RequestOptions;
 
 /**
@@ -49,7 +48,6 @@ public class GlideBitmapLoader implements BitmapLoader {
                 .apply(RequestOptions.skipMemoryCacheOf(true)
                         .diskCacheStrategy(DiskCacheStrategy.DATA)
                         .transform(transformation))
-                .transition(BitmapTransitionOptions.withCrossFade())
                 .into(imageView);
     }
 
