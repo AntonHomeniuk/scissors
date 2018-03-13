@@ -59,6 +59,8 @@ public class LoadRequest {
         if (bitmapLoader == null) {
             bitmapLoader = resolveBitmapLoader(cropView, loaderType);
         }
+        cropView.touchManager.resetPosition();
+        cropView.touchManager.resetScale();
         bitmapLoader.load(model, cropView);
     }
 
