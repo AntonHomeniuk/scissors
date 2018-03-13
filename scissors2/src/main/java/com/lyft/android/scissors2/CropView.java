@@ -47,7 +47,7 @@ import java.lang.annotation.RetentionPolicy;
  */
 public class CropView extends ImageView {
 
-    private TouchManager touchManager;
+    protected TouchManager touchManager;
     private CropViewConfig config;
 
     private Paint viewportPaint = new Paint();
